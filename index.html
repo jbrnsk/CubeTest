@@ -33,7 +33,18 @@
                 updateLink(getUa());
 
             </script>
+            
+            <button onclick="myFunction()">Try it</button>
 
+            <p id="demo"></p>
+
+            <script>
+                function myFunction() {
+                    var x = "User-agent header sent: " + navigator.userAgent;
+                    document.getElementById("demo").innerHTML = x;  
+                }           
+            </script>
+            
         </div>
 
       </header>
@@ -61,8 +72,6 @@
         </div>
 
       </main>
-
-
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
